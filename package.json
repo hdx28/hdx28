@@ -1,0 +1,18 @@
+{
+  "name": "hdx28",
+  "version": "1.0.0",
+  "description": "humane design X | Harshit saxena",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "author": "harshit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "pm2": "^5.1.0",
+    "url": "^0.11.0"
+  }
+}
