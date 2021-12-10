@@ -1,388 +1,1010 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>humane design experience</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://use.typekit.net/ytb6dpl.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-
+  <script>
+    !(function () {
+      document.documentElement.className = "js";
+      var e, t;
+      ((t = document.createElement("style")).innerHTML =
+        "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    })();
+  </script>
   <script>
     $(document).ready(function () {
       //js
       var today = new Date();
       var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
       var dayName = days[new Date().getDay()];
-
-
-
       var time = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-
       document.getElementById("day").innerHTML = dayName;
       document.getElementById("time").innerHTML = time;
     });
   </script>
 </head>
 
-<body>
-  <div class="bg"></div>
+<body class="loading">
+  
+  <main>
+    <div class="bg"></div>
   <div class="bg bg2"></div>
   <div class="bg bg3"></div>
-
-  <div class="header">
-    <span><img src="images/logo-red.png" height="45" id="top" /></span>
-    <span class="btn-shine">people over pixels.</span>
-    <span class="menu">
-      <div id="twitter-container">
-        <i id="twitter-icon" class="fa fa-twitter"></i>
-        <div id="color-animation" class="hidden">
-          <div id="side-animation">
-            <div id="vertical-animation">
-              <i class="note fa fa-comment"></i>
-            </div>
+    <div class="frame">
+      <div class="header">
+        <span><img src="img/logo-red.png" height="45" id="top" /></span>
+        <span class="menu">
+          <div id="twitter-container">
+            <i id="twitter-icon" class="fa fa-twitter"></i>
+            
           </div>
+        </span>
+      </div>
+      <div class="hero">
+        <h1 class="" data-text="">Crafting digital</br> experiences for</br> humans.</h1>
+        <h3 class="">
+          We collaborate with brave, progressive startups and businesses to craft user-centric digital products and
+          interactive experiences.<br />
+
+        </h3>
+        <div class="select-work">
+          <span class="select">Select</span>
+          <span class="work">Work</span>
+        </div>
+        <div class="arrow">
+          <div class="arrow-body"></div>
+          <div class="down-arrow-head"></div>
         </div>
       </div>
-    </span>
-  </div>
-  <div class="hero">
-    <h1 class="" data-text="">Crafting digital experiences for humans.</h1>
-    <h3 class="">
-      We collaborate with brave, progressive startups and businesses to craft user-centric digital products and
-      interactive experiences.<br />
-
-    </h3>
-    <div class="select-work">
-      <span class="select">Select</span>
-      <span class="work">Work</span>
     </div>
-    <div class="arrow">
-      <div class="arrow-body"></div>
-      <div class="down-arrow-head"></div>
-    </div>
-  </div>
+    <section class="items">
 
-  <div class="projects">
+      <article class="item">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/gameday.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">Gameday</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>gameday</span></span>
+          <span class="item__meta-row"><span>B2C, B2B, UX/UI, Visual Identity</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            Gameday is a platform that allows sportsmen to find rewarding competition, locate bookable sporting venues and participate in tournaments.
+          </p>
+          <a class="item__excerpt-link" href="#content-1"><span>explore more</span></a>
+        </div>
+      </article>
 
-    <div class="project coloseo">
-      <h2>Coloseo Co.</h2>
-      <p>
-        Transforming the esports and competitive gaming community.
-      </p>
-      <!-- about -->
+      <article class="item item--invert">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/coloseo.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">coloseo</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>Coloseo</span></span>
+          <span class="item__meta-row"><span>B2C, UI/UX</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            Brand identity and product design for next generation of competitive eSports platform.
+          </p>
+          <a class="item__excerpt-link" href="#content-2"><span>Read more</span></a>
+        </div>
+      </article>
 
-      <div class="button">
-        <a href="/coloseo" class="link">explore more</a>
-      </div>
-    </div>
+      <article class="item">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/kfc.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">kfc</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>kfc</span></span>
+          <span class="item__meta-row"><span>B2C, Kiosk, UI/UX</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            KFC is an American fast food restaurant chain headquartered in Louisville, Kentucky that specializes in fried chicken. It is the world's second-largest restaurant chain after McDonald's, with 22,621 locations globally in 150 countries.
+          </p>
+          <a class="item__excerpt-link" href="#content-3"><span>Read more</span></a>
+        </div>
+      </article>
 
-    <div class="project stayfocused">
-      <h2>Stay Focused</h2>
-      <p>
-        Simple distraction free self control app to track mobile usage and productivity.
-      </p>
-      <!-- about -->
+      <article class="item item--invert">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/stayfocused.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">stayfocused</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>stay focused</span></span>
+          <span class="item__meta-row"><span>PRODUCTIVITY APP, UI/UX</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            Stay Focused is self Control, productivity and app usage tracker app which helps you focus by restricting the usage of apps, websites and keywords.
+          </p>
+          <a class="item__excerpt-link" href="#content-4"><span>Read more</span></a>
+        </div>
+      </article>
 
-      <div class="button">
-        <a class="link">explore more</a>
-      </div>
-    </div>
+      <article class="item">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/atom.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">atom</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>Atom by Gameday</span></span>
+          <span class="item__meta-row"><span>SASS, UI/UX</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            Atom is an enabler for sport facility owners to reach out to potential customers and implement intelligent
+            marketing drives aiming to create an ecosystem that relies on digital ai driven product for recreational
+            sport participation.
+          </p>
+          <a class="item__excerpt-link" href="#content-5"><span>Read more</span></a>
+        </div>
+      </article>
 
-    <div class="project boomerang">
-      <h2>Boomerang Commerce</h2>
-      <p>
-        Intutive UX for an automation platform to support the entire e-commerce flywheel.
-      </p>
-      <!-- about -->
+      <article class="item item--invert">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/commerceiq.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">commerceiq</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>commerceiq</span></span>
+          <span class="item__meta-row"><span>B2B, BROWSER EXTENSION, UX/UI</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            CommerceIQ is the leader in E-commerce Channel Optimization (ECO), the practice of using machine learning, analytics and automation to optimize the e-commerce channel across supply chain, marketing and sales operations. Previously called Boomerang Commerce.
+          </p>
+          <a class="item__excerpt-link" href="#content-6"><span>Read more</span></a>
+        </div>
+      </article>
 
-      <div class="button">
-        <a class="link">explore more</a>
-      </div>
-    </div>
+      <article class="item">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/electiontracker.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">electiontracker</span>
+          <span data-splitting="">India</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>election tracker India</span></span>
+          <span class="item__meta-row"><span>Information architecture, UI/UX</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            Election Result and Statistics. Detailed information of Statistical Reports of General Election to Lok Sabha, State Legislative Assemblies and Bye-Elections.
+          </p>
+          <a class="item__excerpt-link" href="#content-7"><span>Read more</span></a>
+        </div>
+      </article>
 
-    <div class="project shhhout">
-      <h2>Shhhout</h2>
-      <p>
-        Fresh UI/UX for local communities chat app to explore,
-        get updates and shop with business.
-      </p>
-      <!-- about -->
+      <article class="item item--invert">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/feedgoodux.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">feedgoodux</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>Feel Good UX</span></span>
+          <span class="item__meta-row"><span>UX FRAMEWORK, RESEARCH</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>Feel Good UX provides a comprehensive, proven UX research and design process to help you to improve users' emotional outcomes after interaction with digital products & build a behavior design system.
+          </p>
+          <a class="item__excerpt-link" href="#content-8"><span>Read more</span></a>
+        </div>
+      </article>
 
-      <div class="button">
-        <a class="link">explore more</a>
-      </div>
-    </div>
+      <article class="item">
+        <div class="item__imgwrap">
+          <div class="item__img" style="background-image: url(img/androidathon.jpg)"></div>
+        </div>
+        <button class="item__enter unbutton">
+          <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="800" height="800">
+            <circle vector-effect="non-scaling-stroke" cx="400" cy="400" r="150" />
+          </svg>
+        </button>
+        <h2 class="heading heading--item">
+          <span data-splitting="">androidathon</span>
+        </h2>
+        <div class="item__meta">
+          <span class="item__meta-row"><span>androidathon</span></span>
+          <span class="item__meta-row"><span>ANDROID FREELANCE COMMUNITY</span></span>
+        </div>
+        <div class="item__excerpt">
+          <p>
+            Started as a 2 day android hackthon, Androidathon transformed into an open community of android developer primarily based in New Delhi, India. For any freelance android task feel free to reach out.
+          </p>
+          <a class="item__excerpt-link" href="#content-9"><span>Read more</span></a>
+        </div>
+      </article>
 
-    <div class="project landing">
-      <h2>Landing pages</h2>
-      <p>
-        A collection of landing pages we designed over time.
-      </p>
-      <!-- about -->
+    </section>
+    <section class="content">
 
-      <div class="button">
-        <a class="link">explore more</a>
-      </div>
-    </div>
 
-  </div>
-  <div class="hero">
-    <h2> Who is it for?</h2>
-    <p>
-      We work with companies at launch, product-market fit and growth stages. Our cross-functional team of UX, UI,
-      Product and Growth experts acts as the extension of your team, bringing in-depth design and product expertise to
-      help you discover and fix complex product challenges and ship the best version of your product as soon as
-      possible.</p>
-      <div class="logos">
-        <ul>
-          <li><img src="images/1.png" style="height: 66px;" /></li>
-          <li><img src="images/2.png" /></li>
-          <li><img src="images/3.png" /></li>
-          <li><img src="images/7.png" /></li>
-          <li><img src="images/4.png" /></li>
-          <li><img src="images/5.png" /></li>
-          <li><img src="images/6.png" /></li>
-          <li><img src="images/8.png" /></li>
-        </ul>
-      </div>
-    </div>
+      <article class="content__article" id="content-1">
+        <h2 class="heading">
+          <span data-splitting="">Coloseo</span>
 
-    <div class="hero">
-      <h2> Our design process!!</h2>
-      <p>
-        We work with companies at launch, product-market fit and growth stages. Our cross-functional team of UX, UI,
-        Product and Growth experts acts as the extension of your team, bringing in-depth design and product expertise to
-        help you discover and fix complex product challenges and ship the best version of your product as soon as
-        possible.</p>
+        </h2>
+        <div class="content__text">
+          <img src="img/coloseo-logo.png" alt=""
+            style="width:100px;margin-bottom:20px !important;margin-left: -10px !important;">
+          <span style="font-weight:900">eSports, Competitive Gaming</span>
+          </br></br>
+          <span><span style="font-weight:900">Scope -</span> Product design & brand identity</span>
+          </br></br>
+          <span><span style="font-weight:900">Platform -</span> Web</span>
+          <h2>Problem Statement</h2>
+          <p>
+            Building an community to host your own eSports competitions, build a membership community and monetize.
+
+            We worked closely with the team to turn their ambitious product concept into a ready-for-the-market
+            prototype with a unique brand identity that needed to be “intriguing”, “reserved & understated” and
+            “purposeful & mindful”.
+          </p>
+          <h2>The UX Challenges</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system. How do we make people “deposit” and “exchange” their most valuable asset, build trust and
+            spark curiosity, without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a
+            unique internal Flok currency system that was easily adopted by all demographics.
+
+            The onboarding was split in a number of intuitive actions to ensure account completion and activation. We
+            also designed a few hook cycles to bring back users repeatedly, so the team doesn’t need to rely on
+            aggressive retention campaigns.
+          </p>
+          <img src="img/coloseo.png" alt="Some image" />
+          <h2>The Visual Identity</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+        </div>
+        <img src="img/coloseo-2.png" alt="Some image"  style="
+        height: 500px;
+        margin: 0 auto;
+        display: block;
+    " />
+        <div class="content__text">
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+          <img src="img/coloseo-3.png" alt="Some image" />
+
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, <span
+              style="font-weight: 900;">we created a unique internal Flok currency system that was easily adopted by all
+              demographics.</span>
+          </p>
+          <hr>
+          <div class="footer" style="padding-top:60px">
+            <div class="footnote">
+              <span style="font-family:nob">for any digital product design or development query, feel free to </span>
+            </div>
+            <h6>Contact Us →</h6>
+            <img src="img/logo-red.png" style="width: 120px; float: left">
+            <p>
+              We work with companies at launch, product-market fit and growth stages.
+              Our cross-functional team of UX, UI, Product and Growth experts acts as
+              the extension of your team, bringing in-depth design and product
+              expertise to help you discover and fix complex product challenges and
+              ship the best version of your product as soon as possible.
+            </p>
+          </div>
+        </div>
+        <div class="copy">
+          &copy; 2021 | @hdx28 | All rights reserved.
+        </div>
+      </article>
+      
+      <article class="content__article content__article--invert" id="content-2">
+        <h2 class="heading">
+          <span data-splitting="">Proselyte</span>
+          <span data-splitting="">times</span>
+        </h2>
+        <div class="content__text">
+          <p>
+            Sometimes five Imprimaturs are seen together dialogue-wise in the
+            piazza of one title-page, complimenting and ducking each to other
+            with their shaven reverences, whether the author, who stands by in
+            perplexity at the foot of his epistle, shall to the press or to
+            the sponge. These are the pretty responsories, these are the dear
+            antiphonies, that so bewitched of late our prelates and their
+            chaplains with the goodly echo they made; and besotted us to the
+            gay imitation of a lordly Imprimatur, one from Lambeth House,
+            another from the west end of Paul's.
+          </p>
+          <p>
+            So apishly Romanizing, that the word of command still was set down
+            in Latin; as if the learned grammatical pen that wrote it would
+            cast no ink without Latin; or perhaps, as they thought, because no
+            vulgar tongue was worthy to express the pure conceit of an
+            Imprimatur, but rather, as I hope, for that our English, the
+            language of men ever famous and foremost in the achievements of
+            liberty, will not easily find servile letters enow to spell such a
+            dictatory presumption English.
+          </p>
+          <img src="img/2.02d9df87.jpg" alt="Some image" />
+          <p>
+            They are not skilful considerers of human things, who imagine to
+            remove sin by removing the matter of sin; for, besides that it is
+            a huge heap increasing under the very act of diminishing, though
+            some part of it may for a time be withdrawn from some persons, it
+            cannot from all, in such a universal thing as books are; and when
+            this is done, yet the sin remains entire. Though ye take from a
+            covetous man all his treasure, he has yet one jewel left, ye
+            cannot bereave him of his covetousness.
+          </p>
+          <p>
+            Banish all objects of lust, shut up all youth into the severest
+            discipline that can be exercised in any hermitage, ye cannot make
+            them chaste, that came not hither so; such great care and wisdom
+            is required to the right managing of this point. Suppose we could
+            expel sin by this means; look how much we thus expel of sin, so
+            much we expel of virtue: for the matter of them both is the same;
+            remove that, and ye remove them both alike.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="content__article" id="content-3">
+        <h2 class="heading">
+          <span data-splitting="">Coloseo</span>
+
+        </h2>
+        <div class="content__text">
+          <img src="img/coloseo-logo.png" alt=""
+            style="width:100px;margin-bottom:20px !important;margin-left: -10px !important;">
+          <span style="font-weight:900">eSports, Competitive Gaming</span>
+          </br></br>
+          <span><span style="font-weight:900">Scope -</span> Product design & brand identity</span>
+          </br></br>
+          <span><span style="font-weight:900">Platform -</span> Web</span>
+          <h2>Problem Statement</h2>
+          <p>
+            Building an community to host your own eSports competitions, build a membership community and monetize.
+
+            We worked closely with the team to turn their ambitious product concept into a ready-for-the-market
+            prototype with a unique brand identity that needed to be “intriguing”, “reserved & understated” and
+            “purposeful & mindful”.
+          </p>
+          <h2>The UX Challenges</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system. How do we make people “deposit” and “exchange” their most valuable asset, build trust and
+            spark curiosity, without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a
+            unique internal Flok currency system that was easily adopted by all demographics.
+
+            The onboarding was split in a number of intuitive actions to ensure account completion and activation. We
+            also designed a few hook cycles to bring back users repeatedly, so the team doesn’t need to rely on
+            aggressive retention campaigns.
+          </p>
+          <img src="img/coloseo.png" alt="Some image" />
+          <h2>The Visual Identity</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+        </div>
+        <img src="img/coloseo-2.png" alt="Some image" />
+        <div class="content__text">
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+          <img src="img/coloseo-3.png" alt="Some image" />
+
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, <span
+              style="font-weight: 900;">we created a unique internal Flok currency system that was easily adopted by all
+              demographics.</span>
+          </p>
+          <hr>
+          <div class="footer" style="padding-top:60px">
+            <div class="footnote">
+              <span style="font-family:nob">for any digital product design or development query, feel free to </span>
+            </div>
+            <h6>Contact Us →</h6>
+            <img src="img/logo-red.png" style="width: 120px; float: left">
+            <p>
+              We work with companies at launch, product-market fit and growth stages.
+              Our cross-functional team of UX, UI, Product and Growth experts acts as
+              the extension of your team, bringing in-depth design and product
+              expertise to help you discover and fix complex product challenges and
+              ship the best version of your product as soon as possible.
+            </p>
+          </div>
+        </div>
+        <div class="copy">
+          &copy; 2021 | @hdx28 | All rights reserved.
+        </div>
+      </article>
+      
+      <article class="content__article content__article--invert" id="content-4">
+        <h2 class="heading">
+          <span data-splitting="">Proselyte 4</span>
+          <span data-splitting="">times</span>
+        </h2>
+        <div class="content__text">
+          <p>
+            Sometimes five Imprimaturs are seen together dialogue-wise in the
+            piazza of one title-page, complimenting and ducking each to other
+            with their shaven reverences, whether the author, who stands by in
+            perplexity at the foot of his epistle, shall to the press or to
+            the sponge. These are the pretty responsories, these are the dear
+            antiphonies, that so bewitched of late our prelates and their
+            chaplains with the goodly echo they made; and besotted us to the
+            gay imitation of a lordly Imprimatur, one from Lambeth House,
+            another from the west end of Paul's.
+          </p>
+          <p>
+            So apishly Romanizing, that the word of command still was set down
+            in Latin; as if the learned grammatical pen that wrote it would
+            cast no ink without Latin; or perhaps, as they thought, because no
+            vulgar tongue was worthy to express the pure conceit of an
+            Imprimatur, but rather, as I hope, for that our English, the
+            language of men ever famous and foremost in the achievements of
+            liberty, will not easily find servile letters enow to spell such a
+            dictatory presumption English.
+          </p>
+          <img src="img/2.02d9df87.jpg" alt="Some image" />
+          <p>
+            They are not skilful considerers of human things, who imagine to
+            remove sin by removing the matter of sin; for, besides that it is
+            a huge heap increasing under the very act of diminishing, though
+            some part of it may for a time be withdrawn from some persons, it
+            cannot from all, in such a universal thing as books are; and when
+            this is done, yet the sin remains entire. Though ye take from a
+            covetous man all his treasure, he has yet one jewel left, ye
+            cannot bereave him of his covetousness.
+          </p>
+          <p>
+            Banish all objects of lust, shut up all youth into the severest
+            discipline that can be exercised in any hermitage, ye cannot make
+            them chaste, that came not hither so; such great care and wisdom
+            is required to the right managing of this point. Suppose we could
+            expel sin by this means; look how much we thus expel of sin, so
+            much we expel of virtue: for the matter of them both is the same;
+            remove that, and ye remove them both alike.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="content__article" id="content-5">
+        <h2 class="heading">
+          <span data-splitting="">Coloseo 5</span>
+
+        </h2>
+        <div class="content__text">
+          <img src="img/coloseo-logo.png" alt=""
+            style="width:100px;margin-bottom:20px !important;margin-left: -10px !important;">
+          <span style="font-weight:900">eSports, Competitive Gaming</span>
+          </br></br>
+          <span><span style="font-weight:900">Scope -</span> Product design & brand identity</span>
+          </br></br>
+          <span><span style="font-weight:900">Platform -</span> Web</span>
+          <h2>Problem Statement</h2>
+          <p>
+            Building an community to host your own eSports competitions, build a membership community and monetize.
+
+            We worked closely with the team to turn their ambitious product concept into a ready-for-the-market
+            prototype with a unique brand identity that needed to be “intriguing”, “reserved & understated” and
+            “purposeful & mindful”.
+          </p>
+          <h2>The UX Challenges</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system. How do we make people “deposit” and “exchange” their most valuable asset, build trust and
+            spark curiosity, without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a
+            unique internal Flok currency system that was easily adopted by all demographics.
+
+            The onboarding was split in a number of intuitive actions to ensure account completion and activation. We
+            also designed a few hook cycles to bring back users repeatedly, so the team doesn’t need to rely on
+            aggressive retention campaigns.
+          </p>
+          <img src="img/coloseo.png" alt="Some image" />
+          <h2>The Visual Identity</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+        </div>
+        <img src="img/coloseo-2.png" alt="Some image" />
+        <div class="content__text">
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+          <img src="img/coloseo-3.png" alt="Some image" />
+
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, <span
+              style="font-weight: 900;">we created a unique internal Flok currency system that was easily adopted by all
+              demographics.</span>
+          </p>
+          <hr>
+          <div class="footer" style="padding-top:60px">
+            <div class="footnote">
+              <span style="font-family:nob">for any digital product design or development query, feel free to </span>
+            </div>
+            <h6>Contact Us →</h6>
+            <img src="img/logo-red.png" style="width: 120px; float: left">
+            <p>
+              We work with companies at launch, product-market fit and growth stages.
+              Our cross-functional team of UX, UI, Product and Growth experts acts as
+              the extension of your team, bringing in-depth design and product
+              expertise to help you discover and fix complex product challenges and
+              ship the best version of your product as soon as possible.
+            </p>
+          </div>
+        </div>
+        <div class="copy">
+          &copy; 2021 | @hdx28 | All rights reserved.
+        </div>
+      </article>
+      
+      <article class="content__article content__article--invert" id="content-6">
+        <h2 class="heading">
+          <span data-splitting="">Proselytev 6</span>
+          <span data-splitting="">times</span>
+        </h2>
+        <div class="content__text">
+          <p>
+            Sometimes five Imprimaturs are seen together dialogue-wise in the
+            piazza of one title-page, complimenting and ducking each to other
+            with their shaven reverences, whether the author, who stands by in
+            perplexity at the foot of his epistle, shall to the press or to
+            the sponge. These are the pretty responsories, these are the dear
+            antiphonies, that so bewitched of late our prelates and their
+            chaplains with the goodly echo they made; and besotted us to the
+            gay imitation of a lordly Imprimatur, one from Lambeth House,
+            another from the west end of Paul's.
+          </p>
+          <p>
+            So apishly Romanizing, that the word of command still was set down
+            in Latin; as if the learned grammatical pen that wrote it would
+            cast no ink without Latin; or perhaps, as they thought, because no
+            vulgar tongue was worthy to express the pure conceit of an
+            Imprimatur, but rather, as I hope, for that our English, the
+            language of men ever famous and foremost in the achievements of
+            liberty, will not easily find servile letters enow to spell such a
+            dictatory presumption English.
+          </p>
+          <img src="img/2.02d9df87.jpg" alt="Some image" />
+          <p>
+            They are not skilful considerers of human things, who imagine to
+            remove sin by removing the matter of sin; for, besides that it is
+            a huge heap increasing under the very act of diminishing, though
+            some part of it may for a time be withdrawn from some persons, it
+            cannot from all, in such a universal thing as books are; and when
+            this is done, yet the sin remains entire. Though ye take from a
+            covetous man all his treasure, he has yet one jewel left, ye
+            cannot bereave him of his covetousness.
+          </p>
+          <p>
+            Banish all objects of lust, shut up all youth into the severest
+            discipline that can be exercised in any hermitage, ye cannot make
+            them chaste, that came not hither so; such great care and wisdom
+            is required to the right managing of this point. Suppose we could
+            expel sin by this means; look how much we thus expel of sin, so
+            much we expel of virtue: for the matter of them both is the same;
+            remove that, and ye remove them both alike.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="content__article" id="content-7">
+        <h2 class="heading">
+          <span data-splitting="">Coloseo 7</span>
+
+        </h2>
+        <div class="content__text">
+          <img src="img/coloseo-logo.png" alt=""
+            style="width:100px;margin-bottom:20px !important;margin-left: -10px !important;">
+          <span style="font-weight:900">eSports, Competitive Gaming</span>
+          </br></br>
+          <span><span style="font-weight:900">Scope -</span> Product design & brand identity</span>
+          </br></br>
+          <span><span style="font-weight:900">Platform -</span> Web</span>
+          <h2>Problem Statement</h2>
+          <p>
+            Building an community to host your own eSports competitions, build a membership community and monetize.
+
+            We worked closely with the team to turn their ambitious product concept into a ready-for-the-market
+            prototype with a unique brand identity that needed to be “intriguing”, “reserved & understated” and
+            “purposeful & mindful”.
+          </p>
+          <h2>The UX Challenges</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system. How do we make people “deposit” and “exchange” their most valuable asset, build trust and
+            spark curiosity, without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a
+            unique internal Flok currency system that was easily adopted by all demographics.
+
+            The onboarding was split in a number of intuitive actions to ensure account completion and activation. We
+            also designed a few hook cycles to bring back users repeatedly, so the team doesn’t need to rely on
+            aggressive retention campaigns.
+          </p>
+          <img src="img/coloseo.png" alt="Some image" />
+          <h2>The Visual Identity</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+        </div>
+        <img src="img/coloseo-2.png" alt="Some image" />
+        <div class="content__text">
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+          <img src="img/coloseo-3.png" alt="Some image" />
+
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, <span
+              style="font-weight: 900;">we created a unique internal Flok currency system that was easily adopted by all
+              demographics.</span>
+          </p>
+          <hr>
+          <div class="footer" style="padding-top:60px">
+            <div class="footnote">
+              <span style="font-family:nob">for any digital product design or development query, feel free to </span>
+            </div>
+            <h6>Contact Us →</h6>
+            <img src="img/logo-red.png" style="width: 120px; float: left">
+            <p>
+              We work with companies at launch, product-market fit and growth stages.
+              Our cross-functional team of UX, UI, Product and Growth experts acts as
+              the extension of your team, bringing in-depth design and product
+              expertise to help you discover and fix complex product challenges and
+              ship the best version of your product as soon as possible.
+            </p>
+          </div>
+        </div>
+        <div class="copy">
+          &copy; 2021 | @hdx28 | All rights reserved.
+        </div>
+      </article>
+      
+      <article class="content__article content__article--invert" id="content-8">
+        <h2 class="heading">
+          <span data-splitting="">Proselyte 8</span>
+          <span data-splitting="">times</span>
+        </h2>
+        <div class="content__text">
+          <p>
+            Sometimes five Imprimaturs are seen together dialogue-wise in the
+            piazza of one title-page, complimenting and ducking each to other
+            with their shaven reverences, whether the author, who stands by in
+            perplexity at the foot of his epistle, shall to the press or to
+            the sponge. These are the pretty responsories, these are the dear
+            antiphonies, that so bewitched of late our prelates and their
+            chaplains with the goodly echo they made; and besotted us to the
+            gay imitation of a lordly Imprimatur, one from Lambeth House,
+            another from the west end of Paul's.
+          </p>
+          <p>
+            So apishly Romanizing, that the word of command still was set down
+            in Latin; as if the learned grammatical pen that wrote it would
+            cast no ink without Latin; or perhaps, as they thought, because no
+            vulgar tongue was worthy to express the pure conceit of an
+            Imprimatur, but rather, as I hope, for that our English, the
+            language of men ever famous and foremost in the achievements of
+            liberty, will not easily find servile letters enow to spell such a
+            dictatory presumption English.
+          </p>
+          <img src="img/2.02d9df87.jpg" alt="Some image" />
+          <p>
+            They are not skilful considerers of human things, who imagine to
+            remove sin by removing the matter of sin; for, besides that it is
+            a huge heap increasing under the very act of diminishing, though
+            some part of it may for a time be withdrawn from some persons, it
+            cannot from all, in such a universal thing as books are; and when
+            this is done, yet the sin remains entire. Though ye take from a
+            covetous man all his treasure, he has yet one jewel left, ye
+            cannot bereave him of his covetousness.
+          </p>
+          <p>
+            Banish all objects of lust, shut up all youth into the severest
+            discipline that can be exercised in any hermitage, ye cannot make
+            them chaste, that came not hither so; such great care and wisdom
+            is required to the right managing of this point. Suppose we could
+            expel sin by this means; look how much we thus expel of sin, so
+            much we expel of virtue: for the matter of them both is the same;
+            remove that, and ye remove them both alike.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="content__article" id="content-9">
+        <h2 class="heading">
+          <span data-splitting="">Coloseo 9</span>
+
+        </h2>
+        <div class="content__text">
+          <img src="img/coloseo-logo.png" alt=""
+            style="width:100px;margin-bottom:20px !important;margin-left: -10px !important;">
+          <span style="font-weight:900">eSports, Competitive Gaming</span>
+          </br></br>
+          <span><span style="font-weight:900">Scope -</span> Product design & brand identity</span>
+          </br></br>
+          <span><span style="font-weight:900">Platform -</span> Web</span>
+          <h2>Problem Statement</h2>
+          <p>
+            Building an community to host your own eSports competitions, build a membership community and monetize.
+
+            We worked closely with the team to turn their ambitious product concept into a ready-for-the-market
+            prototype with a unique brand identity that needed to be “intriguing”, “reserved & understated” and
+            “purposeful & mindful”.
+          </p>
+          <h2>The UX Challenges</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system. How do we make people “deposit” and “exchange” their most valuable asset, build trust and
+            spark curiosity, without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a
+            unique internal Flok currency system that was easily adopted by all demographics.
+
+            The onboarding was split in a number of intuitive actions to ensure account completion and activation. We
+            also designed a few hook cycles to bring back users repeatedly, so the team doesn’t need to rely on
+            aggressive retention campaigns.
+          </p>
+          <img src="img/coloseo.png" alt="Some image" />
+          <h2>The Visual Identity</h2>
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+        </div>
+        <img src="img/coloseo-2.png" alt="Some image" />
+        <div class="content__text">
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, we created a unique internal
+            Flok currency system that was easily adopted by all demographics.
+          </p>
+          <img src="img/coloseo-3.png" alt="Some image" />
+
+          <p>
+            The project had a number of product challenges that needed to be addressed with smart user experience
+            deliverables. One of them was keeping the platform fair and engaging, without involving a traditional
+            payment system.
+            How do we make people “deposit” and “exchange” their most valuable asset, build trust and spark curiosity,
+            without overwhelming with a heavy onboarding flow. After a number of UX tests, <span
+              style="font-weight: 900;">we created a unique internal Flok currency system that was easily adopted by all
+              demographics.</span>
+          </p>
+          <hr>
+          <div class="footer" style="padding-top:60px">
+            <div class="footnote">
+              <span style="font-family:nob">for any digital product design or development query, feel free to </span>
+            </div>
+            <h6>Contact Us →</h6>
+            <img src="img/logo-red.png" style="width: 120px; float: left">
+            <p>
+              We work with companies at launch, product-market fit and growth stages.
+              Our cross-functional team of UX, UI, Product and Growth experts acts as
+              the extension of your team, bringing in-depth design and product
+              expertise to help you discover and fix complex product challenges and
+              ship the best version of your product as soon as possible.
+            </p>
+          </div>
+        </div>
+        <div class="copy">
+          &copy; 2021 | @hdx28 | All rights reserved.
+        </div>
+      </article>
+      
+
+
+      <button class="content__back unbutton">
+        <svg width="108" height="23">
+          <path stroke="#000" fill="none"
+            d="M107.5 11.5H1.5m0 0c8.975-.536 15.087-1.364 18.336-2.484C23.086 7.896 26.64 5.39 30.5 1.5m-29 10c8.975.536 15.087 1.364 18.336 2.484 3.25 1.12 6.804 3.626 10.664 7.516" />
+        </svg>
+      </button>
+    </section>
+    <div class="frame frame--footer">
+      <div class="hero">
+        <h2> Who is it for?</h2>
+        <p>
+          We work with companies at launch, product-market fit and growth stages. Our cross-functional team of UX, UI,
+          Product and Growth experts acts as the extension of your team, bringing in-depth design and product expertise
+          to
+          help you discover and fix complex product challenges and ship the best version of your product as soon as
+          possible.</p>
         <div class="logos">
           <ul>
-            <li><img src="images/1.png" style="height: 66px;" /></li>
-            <li><img src="images/2.png" /></li>
-            <li><img src="images/3.png" /></li>
-            <li><img src="images/7.png" /></li>
-            <li><img src="images/4.png" /></li>
-            <li><img src="images/5.png" /></li>
-            <li><img src="images/6.png" /></li>
-            <li><img src="images/8.png" /></li>
+            <li><img src="img/1.png" style="height: 66px;" /></li>
+            <li><img src="img/2.png" /></li>
+            <li><img src="img/3.png" /></li>
+            <li><img src="img/7.png" /></li>
+            <li><img src="img/4.png" /></li>
+            <li><img src="img/5.png" /></li>
+            <li><img src="img/6.png" /></li>
+            <li><img src="img/8.png" /></li>
+            <li><img src="img/11.png" /></li>
           </ul>
         </div>
       </div>
+      <div class="how">
+        <span class="slanted">Crafting delightful experiences & solving complex challenges,
+          everyday.</span>
+      </div>
+      <div class="footer">
+        <div class="footnote">
+          BASED IN DELHI, <span style="font-family:nob">SOLVING THE PROBLEM OF THE WORLD.</span>
+          <br>
+          LOCAL TIME: IST, <span style="font-family:nob"><span id="day">Thu</span> <span id="time">10:07
+              AM</span></span>
+        </div>
+        <h6>Get in touch →</h6>
+        <img src="img/logo-red.png" style="width: 120px; float: left">
+        <p>
+          We work with companies at launch, product-market fit and growth stages.
+          Our cross-functional team of UX, UI, Product and Growth experts acts as
+          the extension of your team, bringing in-depth design and product
+          expertise to help you discover and fix complex product challenges and
+          ship the best version of your product as soon as possible.
+        </p>
+      </div>
+
+    </div>
   
-
-
-  <div class="how">
-    <span class="slanted">Crafting delightful experiences & solving complex challenges,
-      everyday.</span>
-  </div>
-
-  <div class="footer">
-    <div class="footnote">
-      BASED IN DELHI, WORKING WORLDWIDE
-      <br />
-      IST LOCAL TIME: <span id="day"></span> <span id="time">GMT +05:30</span>
-    </div>
-    <h6>Get in touch &rarr;</h6>
-    <img src="images/logo-red.png" style="width: 120px; float: left" />
-    <p>
-      We work with companies at launch, product-market fit and growth stages.
-      Our cross-functional team of UX, UI, Product and Growth experts acts as
-      the extension of your team, bringing in-depth design and product
-      expertise to help you discover and fix complex product challenges and
-      ship the best version of your product as soon as possible.
-    </p>
-  </div>
-  <div class="how-b">
-    <span class="slanted-b">all rights reserved &copy; 2021 | hdx28.xyz</span>
-  </div>
-  <div class="sparee"></div>
   <div class="spare">
-    <div class="contain">
-
-      <h3><b style="font-weight: 600;">Still scrolling?</b></h3>
-      <p style="width: 100%;margin: 5px 0px;"> Do you fancy understanding more about design? Feel free to explore these
-        great documentaries.</p>
-
-      <div class="row">
-        <div class="row__inner">
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-4.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-5.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-6.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-
-          <div class="tile">
-            <div class="tile__media">
-              <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-19.jpg" alt="" />
-            </div>
-            <div class="tile__details">
-              <div class="tile__title">
-                Top Gear
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
     <div class="contain" style="margin-top: 80px;">
-
-      <h3><b style="font-weight: 600;">Articles from archives</b></h3>
-      <p style="width: 100%;margin: 5px 0px;"> Do you fancy understanding more about design? feel free to explore these
-        great documentaries.</p>
-
-
-      <div class="articles">
-        <div>
-          <img src="../images/design-process.jpeg" style="max-width: 250px;">
-          <h3>Design Process, building a site from concept to finish.</h3>
-          <p>I take great interest in the thought process of other designers and developers, how they develop their
-            sites from the intial concept to finish, so that I can optimize my own workflow. These interactions also
-            help me uncovering new tools, tricks, hacks. It also helps me improvise my management skills. Some things
-            have changed consistently</p>
-          <a href="#" class="article-link">read on medium.</a>
-        </div>
-
-        <div>
-          <img src="../images/design-process.jpeg" style="max-width: 250px;">
-          <h3>Design is not Art.</h3>
-          <p>We are not artists. We aren’t “creatives”, whatever that means. We weren’t hired to give those corporate
-            brochures some flair, or impart our creative opinion on your colour choices. We are problem solvers.</p>
-          <a href="#" class="article-link">read on medium.</a>
-        </div>
-
-        <div>
-          <img src="../images/design-process.jpeg" style="max-width: 250px;">
-          <h3>How I Write CSS?
-          </h3>
-          <p>This is usually the first thing that I consider when I sit down to write my CSS. The structure of the
-            overall file. The table of contents, if you will. Nothing particularly out of the ordinary about the typical
-            structure I choose for single page sites:</p>
-          <a href="#" class="article-link">read on medium.</a>
-        </div>
-
-        <div>
-          <img src="../images/design-process.jpeg" style="max-width: 250px;">
-          <h3>Building an app</h3>
-          <p>I’m lucky enough to have had the time to work on a num­ber of per­sonal projects, giv­ing me a fairly solid
-            knowledge web apps. And hav­ing looked at the exam­ples of pre­vi­ous work for the mod­ule, I could tell
-            that a sim­ple list of project names, thumb­nails, and short descrip­tions would gain a suf­fi­cient mark.
-          </p>
-          <a href="#" class="article-link">read on medium.</a>
-        </div>
-
-        <div>
-          <img src="../images/design-process.jpeg" style="max-width: 250px;">
-          <h3>Make it beautiful…..stupid!</h3>
-          <p>The Shak­ers have a saying:
-            Do not make some­thing unless it is both nec­es­sary and use­ful; but if it is both, do not hes­i­tate to
-            make it beautiful.</p>
-          <a href="#" class="article-link">read on medium.</a>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="contain" style="margin-top: 80px;">
-
       <div class="tileContainer">
-
       </div>
-
-
-
     </div>
-
-
   </div>
-
-
-
-
   <div class="after-fin">
     <div class="post-fin">
       <h1>
@@ -390,8 +1012,22 @@
       </h1>
     </div>
   </div>
+  <div class="copy">
+    &copy; 2021 | @hdx28 | All rights reserved.
+  </div>
+</main>
+  <svg class="cursor" width="80" height="80">
+    <circle class="cursor__inner" cx="40" cy="40" r="20" />
+  </svg>
+  <script src="js/index.js"></script>
   <script src="js/magic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script>
+    $('#twitter-icon').click(function () {
+      window.open('http://www.twitter.com/hdx28', 'window name');
+      return false;
+    });
+  </script>
 </body>
 
 </html>

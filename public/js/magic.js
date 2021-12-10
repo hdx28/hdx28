@@ -1,6 +1,6 @@
 // options
 var options = {
-    imgSrc : "https://unsplash.it/g/1024/768?image=887",
+    imgSrc : "https://unsplash.it/1080/768?image=445",
     containerName : "tileContainer",
     grid : false,
     tileWidth : 80,
@@ -8,7 +8,7 @@ var options = {
     mouseTrail:true
   }
   
-  // ----------------------------------------------------------
+  // 366----------------------------------------------------------
   var tileWidth, tileHeight, numTiles, tileHolder, tileContainer;
   var directionX, directionY;
   var imgOriginalWidth, imgOriginalHeight;
